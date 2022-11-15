@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <script src="DishRecipeClass.js"></script>
+<script src="IngredientClass.js"></script>
+    <title>Recipe website</title>
+</head>
+<body>
+    <header>Welcome to my Recipe website</header>
+    <button onclick="showDiv1()">Enter new ingredient</button>
+    <button onclick="showDiv2() , clearDiv3()">Enter new recipe</button>
+    <main>
+                <!-- basic buttons to enter recipe and ingredients -->
+        <div id="div1">
+            <label>Ingredient Name:</label>
+            <input type="text" id="IngredientName">
+            <label>Calories:</label>
+            <input type="text" id="calories">
+            <label>Image URL:</label>
+            <input type="text" id="imageURL">
+            <button onclick="addIngredientToArr()">Submit</button>
+        </div>
+       <div id="div2"> 
+            <label>Recipe name:</label>
+            <input type="text" id="recipeName">
+            <label>Recipe cooking method:</label>
+            <input type="text" id="cookingMethod">
+            <label>Recipe cooking time:</label>
+            <input type="text" id="recipeCookingTime">
+            <label>Image URL:</label>
+            <input type="text" id="recipeImageURL">
+            <button onclick="addRecipeToArr(), DishRecipeRender(DishRecipeArr)">Submit</button>
+       </div>
+       <!-- rendering existing ingredients -->
+       <div id="div3"></div>
+       <!-- rendering existing recipes -->
+       <div id="div4"></div>        
+       </div>
+    </main>
+</body>
+</html>

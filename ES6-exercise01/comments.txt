@@ -1,0 +1,3 @@
+1.To render ingerdients to screen while pressing 'Enter new Recipe'
+with an 'Add' checkbox. V
+2.while clicking 'Submit' under Recipe, rendring all exsicting Recipe.
